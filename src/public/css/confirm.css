@@ -1,0 +1,91 @@
+.confirm-form__container {
+    width: 90%;
+    margin: 0 auto 100px auto;
+    padding: 50px 60px;
+    border: 1px solid #e0dfde;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.confirm-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e0dfde;
+}
+
+.form__inner {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #e0dfde;
+}
+
+.confirm-label {
+    width: 200px; /* ラベルの幅を固定 */
+    padding: 20px;
+    background: #8B7969;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-right: 1px solid #e0dfde;
+    display: flex;
+    align-items: center;
+}
+
+.confirm-data {
+    flex: 1; /* 残りの幅をすべて使用 */
+    padding: 20px;
+    color: #8B7969;
+    word-break: break-word; /* 長いテキストでも改行されるようにする */
+    display: flex;
+    align-items: center;
+}
+
+.confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* ボタンのスタイル */
+.confirm-buttons button {
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.confirm-submit {
+    background-color: #8B7969;
+    color: #fff;
+}
+
+.confirm-back {
+    background-color: #fff;
+    color: #8B7969;
+    text-decoration: underline;
+}
+
+/* ============================================================
+メディアクエリ
+============================================================ */
+@media (max-width: 1080px) {
+    .confirm-item {
+        flex-direction: column; /* 画面が狭いときは縦並びにする */
+    }
+
+    .confirm-label {
+        width: 100%; /* 縦並びになったら幅を100%にする */
+        text-align: left; /* テキストを左寄せにする */
+        border-right: none; /* 右側の線を消す */
+        border-bottom: 1px solid #e0dfde; /* 下側に線を追加 */
+        
+    }
+
+    .confirm-data {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}

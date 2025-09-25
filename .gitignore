@@ -1,0 +1,12 @@
+# Laravel Dependencies
+/vendor
+/node_modules
+
+# Environment file
+.env
+
+# Mac OS system files
+.DS_Store
+
+# Docker data
+docker/mysql/data/

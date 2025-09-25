@@ -1,0 +1,53 @@
+/* thanks.css */
+/* ブロック: thanks-page */
+.thanks-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 擬似要素: 背景の大きな文字 */
+.thanks-page::before {
+    content: "Thank You";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* フォント指定：レイアウトズレるけど指定サイズ↓ */
+    font-size: 280px;
+    font-weight: 400;
+    color: #8B7969;
+    z-index: -1;
+    opacity: 0.05;
+}
+
+
+.thanks-page__content {
+    text-align: center;
+}
+
+.thanks-page__content h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #8B7969;
+    margin-bottom: 20px;
+}
+
+.thanks-page__button {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #8B7969;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* エレメント: thanks-page__heading */
+.thanks-page__heading {
+    font-size: 1.5rem;
+    color: #8B7969;
+    margin-bottom: 20px;
+}
