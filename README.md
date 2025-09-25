@@ -8,7 +8,7 @@
 
 1. このリポジトリをクローンします。
    ```
-   git clone [https://github.com/KaitoS828/Confirmation-test]
+   git clone [https://github.com/KaitoS828/Confirmation-test.git]
    ```
 2. プロジェクトディレクトリに移動します。
    ```
